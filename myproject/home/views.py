@@ -56,3 +56,7 @@ def signout(request):
     logout(request)
     messages.success(request,'logged out successfully')
     return redirect('homee')
+
+def hai(request):
+    return render(request,'home/hai.html')
+
